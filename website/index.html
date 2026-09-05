@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AeroGrab — Fast, simple YouTube downloads for Windows</title>
+  <meta name="description" content="AeroGrab is a free, offline-first Windows app for downloading YouTube videos, playlists and channels in up to 1080p or MP3. No sign-up, no ads." />
+  <meta property="og:title" content="AeroGrab — Fast, simple YouTube downloads" />
+  <meta property="og:description" content="Free Windows app: single videos, playlists, channels and bulk URLs in up to 1080p or MP3." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nuruddin-deyoan.github.io/AeroGrab/" />
+  <meta property="og:image" content="https://nuruddin-deyoan.github.io/AeroGrab/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="AeroGrab logo" />
+        AeroGrab
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#showcase">Tour</a>
+        <a href="#creator">Creator</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a class="nav-cta" data-dl="setup" href="download.html">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" /><path d="M7 10l5 5 5-5" /><path d="M12 15V3" /></svg>
+        Download
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18" /></svg>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grid-bg"></div>
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="orb orb-c"></div>
+    </div>
+    <div class="wrap hero-inner">
+      <div>
+        <span class="hero-badge"><span class="dot"></span><span data-site="version">v1.0.0</span>&nbsp;· Windows 10/11 · Free</span>
+        <h1>YouTube downloads, <span class="green">minus the hassle.</span></h1>
+        <p class="hero-sub">Paste a link — single video, playlist, channel, or a whole batch — pick a quality, and you're done. Powered by yt-dlp, wrapped in a clean native app.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" data-dl="setup" href="download.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" /><path d="M7 10l5 5 5-5" /><path d="M12 15V3" /></svg>
+            Download for Windows
+          </a>
+          <a class="btn btn-ghost" href="#how">See how it works</a>
+        </div>
+        <div class="hero-meta">
+          <span class="chip"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5" /></svg>Free forever</span>
+          <span class="chip"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5" /></svg>Works offline</span>
+          <span class="chip"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5" /></svg>No sign-up, no ads</span>
+        </div>
+      </div>
+      <div class="mockup" aria-hidden="true">
+        <div class="mockup-titlebar">
+          <span class="mockup-logo">▶</span>
+          <span class="mockup-appname">AeroGrab</span>
+          <span class="mockup-status"><span class="dot"></span>Downloading 2 files</span>
+          <span class="mockup-winbtns"><span></span><span></span><span></span></span>
+        </div>
+        <div class="mockup-tabs">
+          <span class="mockup-tab">Home</span>
+          <span class="mockup-tab active">Queue</span>
+          <span class="mockup-tab">History</span>
+          <span class="mockup-tab">Settings</span>
+        </div>
+        <div class="mockup-body">
+          <div class="mockup-urlbar">youtube.com/watch?v=…<span class="mockup-fetch">Fetch</span></div>
+          <div class="mockup-row">
+            <div class="mockup-row-top">
+              <span class="mockup-thumb"></span>
+              <span class="mockup-lines"><i></i><i></i></span>
+              <span class="mockup-quality">720p</span>
+            </div>
+            <div class="mockup-bar"><div class="mockup-fill a1"></div></div>
+            <div class="mockup-sub">64.2% · 2.4MiB/s · ETA 00:12</div>
+          </div>
+          <div class="mockup-row">
+            <div class="mockup-row-top">
+              <span class="mockup-thumb"></span>
+              <span class="mockup-lines"><i></i><i></i></span>
+              <span class="mockup-quality">MP3</span>
+            </div>
+            <div class="mockup-bar"><div class="mockup-fill a2"></div></div>
+            <div class="mockup-sub"><span class="mockup-done">Merging formats…</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6" /></svg>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="features">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">Features</span>
+          <h2>Everything you need, nothing you don't.</h2>
+          <p class="section-lead">A focused tool that does one job well — getting videos off YouTube and onto your disk.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h13M8 12h13M8 18h13" /><path d="M3 6h.01M3 12h.01M3 18h.01" /></svg></div>
+            <h3>Singles, playlists &amp; channels</h3>
+            <p>Paste one video, a full playlist, a channel, or a batch of links. Select all, pick a range, or filter by title.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 4.9 5.4.8-3.9 3.8.9 5.4-4.8-2.5-4.8 2.5.9-5.4L4.2 7.7l5.4-.8z" /></svg></div>
+            <h3>Best → 360p + MP3</h3>
+            <p>Six quality presets from original Best down to 360p, plus one-click MP3 audio extraction. Set a default once.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" /><path d="M7 10l5 5 5-5" /><path d="M12 15V3" /></svg></div>
+            <h3>Smart download queue</h3>
+            <p>Up to 5 concurrent downloads with live speed and ETA, per-item cancel, one-click retry for failures, and reveal-in-folder.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg></div>
+            <h3>History that works for you</h3>
+            <p>Every finished download is logged with size and date, grouped by day, searchable — and re-downloadable in one click.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7z" /></svg></div>
+            <h3>Truly offline-first</h3>
+            <p>yt-dlp and ffmpeg ship inside the installer. No accounts, no cloud, no telemetry — your links never leave your PC.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.7 1.7 0 00.3 1.9l.1.1a2 2 0 11-2.9 2.9l-.1-.1a1.7 1.7 0 00-1.9-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.2a1.7 1.7 0 00-1-1.5 1.7 1.7 0 00-1.9.3l-.1.1a2 2 0 11-2.9-2.9l.1-.1a1.7 1.7 0 00.3-1.9 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.2a1.7 1.7 0 001.5-1 1.7 1.7 0 00-.3-1.9l-.1-.1a2 2 0 112.9-2.9l.1.1a1.7 1.7 0 001.9.3h.1a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.2a1.7 1.7 0 001 1.5h.1a1.7 1.7 0 001.9-.3l.1-.1a2 2 0 112.9 2.9l-.1.1a1.7 1.7 0 00-.3 1.9v.1a1.7 1.7 0 001.5 1h.2a2 2 0 110 4h-.2a1.7 1.7 0 00-1.5 1z" /></svg></div>
+            <h3>Yours to tune</h3>
+            <p>Default quality, download folder with free-space readout, concurrency control — every change saves instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="how">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">How it works</span>
+          <h2>Link in, file out. Three steps.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step-num">01</div>
+            <h3>Paste a link</h3>
+            <p>Drop in any YouTube URL — or a whole list at once. Press <kbd>Enter</kbd> and the app figures out what it is.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">02</div>
+            <h3>Pick quality</h3>
+            <p>Choose per download or set a default in Settings, from full-quality video down to MP3 audio.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step-num">03</div>
+            <h3>Download</h3>
+            <p>Watch live progress with speed and ETA in the queue, then open the file right from the app.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="showcase">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">Tour</span>
+          <h2>Built for batch work.</h2>
+          <p class="section-lead">A peek at the moments you'll live in: grabbing whole playlists, watching the queue hum, and finding things again later.</p>
+        </div>
+        <div class="showcase-grid">
+          <div class="mini reveal">
+            <h3>Bulk playlists</h3>
+            <p>Select all, narrow a range, or filter by title — then download the lot.</p>
+            <div class="mini-row"><span class="tick">✓</span>#12 — Deep Dive<span class="mini-tag">720p</span></div>
+            <div class="mini-row"><span class="tick">✓</span>#13 — Studio Tour<span class="mini-tag">720p</span></div>
+            <div class="mini-row"><span class="tick">✓</span>#14 — Q&amp;A Special<span class="mini-tag">MP3</span></div>
+          </div>
+          <div class="mini reveal">
+            <h3>Live queue</h3>
+            <p>Concurrent downloads with speed, ETA, retry, and reveal-in-folder.</p>
+            <div class="mini-row"><span class="bar"><i style="width:64%"></i></span>64%</div>
+            <div class="mini-row"><span class="bar"><i class="merge"></i></span>Merging…</div>
+            <div class="mini-row"><span class="tick">✓</span>Lecture_04.mp4</div>
+          </div>
+          <div class="mini reveal">
+            <h3>History &amp; re-download</h3>
+            <p>Grouped by day, searchable, with one-click re-downloads.</p>
+            <div class="mini-row">Today<span class="mini-tag">3 items</span></div>
+            <div class="mini-row">Podcast_Ep88.mp3<span class="mini-tag">MP3</span></div>
+            <div class="mini-row">Trailer_4K.mp4<span class="mini-tag">1080p</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="get">
+      <div class="wrap">
+        <div class="cta-band reveal">
+          <h2>Ready when you are.</h2>
+          <p>Free for Windows 10 &amp; 11 (64-bit). Two clicks to install, no sign-up.</p>
+          <div class="row">
+            <a class="btn btn-primary" data-dl="setup" href="download.html">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" /><path d="M7 10l5 5 5-5" /><path d="M12 15V3" /></svg>
+              Download <span data-site="version">v1.0.0</span>
+            </a>
+            <a class="btn btn-ghost" href="download.html">Install details</a>
+          </div>
+          <div class="cta-fine"><span data-site="asset">aerograb-1.0.0-setup.exe</span> · <span data-site="size">~191 MB</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="creator">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">Creator</span>
+          <h2>Made by a human, for humans.</h2>
+        </div>
+        <div class="creator-card reveal">
+          <div class="creator-avatar" aria-hidden="true">ND</div>
+          <div>
+            <h3>Nuruddin <span>Deyoan</span></h3>
+            <p>Designed and built AeroGrab solo — every pixel, every download queue, every edge case — with love, and powered by the open-source giants yt-dlp, ffmpeg, Electron and React.</p>
+            <div class="creator-links">
+              <a class="pill-link" data-link="profile" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
+                GitHub Profile
+              </a>
+              <a class="pill-link" data-link="source" href="#">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6" /></svg>
+                App Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="faq">
+      <div class="wrap">
+        <div class="reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions, answered.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="reveal">
+            <summary>Is AeroGrab really free?</summary>
+            <div class="faq-a">Yes — free forever, no accounts, no ads, no feature gates. If it ever asks for payment, it isn't us.</div>
+          </details>
+          <details class="reveal">
+            <summary>Does it work offline?</summary>
+            <div class="faq-a">The app itself is fully offline-first: yt-dlp and ffmpeg ship inside the installer. You only need internet for the obvious part — fetching video info and downloading.</div>
+          </details>
+          <details class="reveal">
+            <summary>Why is the installer ~190 MB?</summary>
+            <div class="faq-a">Almost all of it is the bundled <code>ffmpeg.exe</code> (~146 MB) for merging and MP3 conversion, plus the Electron runtime. That's the price of zero extra installs.</div>
+          </details>
+          <details class="reveal">
+            <summary>Windows SmartScreen warns me. Is it safe?</summary>
+            <div class="faq-a">The build isn't code-signed (certificates cost money), so SmartScreen flags it. The source is open — click <em>More info → Run anyway</em>, or build from source yourself.</div>
+          </details>
+          <details class="reveal">
+            <summary>What can I download, and in which quality?</summary>
+            <div class="faq-a">Single videos, playlists, channels, and bulk URL lists — in Best, 1080p, 720p, 480p, 360p, or MP3 audio-only.</div>
+          </details>
+          <details class="reveal">
+            <summary>Which Windows versions are supported?</summary>
+            <div class="faq-a">Windows 10 and 11, 64-bit. You'll need roughly 500 MB of free disk space for the app plus room for your videos.</div>
+          </details>
+          <details class="reveal">
+            <summary>How do I get updates?</summary>
+            <div class="faq-a">There's no auto-updater yet — watch the <a data-link="releases" href="#">releases page</a>; new versions land there with a changelog.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <img src="assets/logo.png" alt="AeroGrab logo" />
+            AeroGrab
+          </a>
+          <p>Fast, simple YouTube downloads for Windows. Free forever.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="download.html">Download</a>
+          <a data-link="releases" href="#">Changelog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a data-link="source" href="#">Source code</a>
+          <a data-link="issues" href="#">Report an issue</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Creator</h4>
+          <a data-link="profile" href="#">Nuruddin Deyoan</a>
+          <a href="#creator">About</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Nuruddin Deyoan. Please only download content you have the rights to.</span>
+        <span>Developed with <span class="love">♥</span> and too much coffee.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
